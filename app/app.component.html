@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class=".col-lg-12">
+      <ul class="nav nav-tabs">
+        <li><a routerLink="/">Home</a></li>
+        <!-- use routerLink instead of href because routerLink does not reaload the page but href does reload the home page.-->
+        <li><a routerLink="/csv">CSV</a></li>
+        <li><a routerLink="/users">Users</a> </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class=".col-lg-6">
+      <!--this router-oulet -->
+      <h1>Angular App</h1>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+
+

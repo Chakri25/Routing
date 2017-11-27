@@ -1,0 +1,15 @@
+<h2>
+  We have Number of Users
+</h2>
+<button class="btn btn-primary" (click)="goToUser1()">user/1/chakri</button><br><br>
+
+<a
+  *ngFor="let u of users"
+  [routerLink] = "['/users', u.id, u.name, 'edit']"
+  [queryParams] = "{'allowEdit': 1}"
+   fragment = "loading"
+>
+  {{ u.id + '-' + u.name }}<br><br> </a> <br>
+
+<!--<app-user></app-user>-->
+<router-outlet></router-outlet>
